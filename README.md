@@ -1,4 +1,4 @@
-# SQL Intro Day 2 In class practice
+# SQL Intro Day 2 Morning Classwork
 
 For this exercise you will create a ```Company``` Database that contains a single table called ```Employee```.
 
