@@ -8,23 +8,61 @@ Sam, Sham, DEVELOPER, 35000
 Ellen, Musk, DEVELOPER, 38000
 
 RESULT:
+insert into Employee (Employee_First_Name, Employee_Last_Name, Employee_Job_Position, Employee_Salary)
+     VALUES ('Chuck', 'Jones', 'MANAGER', 100000),
+            ('Marty', 'Krofft', 'ENGINEER', 80000),
+            ('Peter', 'Barker', 'DEVELOPER', 50000),
+            ('Sam', 'Sham', 'DEVELOPER', 35000),
+            ('Ellen', 'Musk', 'DEVELOPER', 38000)
+[2019-04-29 11:39:49] 5 rows affected in 23 ms
 
 SELECT all Employee records from the database
 
 RESULT:
+1	Chuck	Jones	MANAGER	100000
+2	Marty	Krofft	ENGINEER	80000
+3	Peter	Barker	DEVELOPER	50000
+4	Sam	Sham	DEVELOPER	35000
+5	Ellen	Musk	DEVELOPER	38000
+
 
 SELECT only the DEVELOPERS from the table
 
 RESULT:
+3	Peter	Barker	DEVELOPER	50000
+4	Sam	Sham	DEVELOPER	35000
+5	Ellen	Musk	DEVELOPER	38000
+
 
 SELECT only the Employees making more than 50000
 
 RESULT:
+1	Chuck	Jones	MANAGER	100000
+2	Marty	Krofft	ENGINEER	80000
+
 
 UPDATE the salary for Ellen Musk and give a raise to 42000
 
 RESULT:
+2 rows retrieved starting from 1 in 21 ms (execution: 4 ms, fetching: 17 ms)
+sql> update Employee set Employee_Salary =42000
+     where Employee_First_Name = 'Ellen'
+       and Employee_Last_Name= 'Musk'
+[2019-04-29 11:45:58] 1 row affected in 13 ms
+
+5	Ellen	Musk	DEVELOPER	42000
+
 
 DELETE Sam Sham
 
 RESULT:
+ 5 rows retrieved starting from 1 in 27 ms (execution: 9 ms, fetching: 18 ms)
+sql> delete from Employee
+     where Employee_First_Name='Sam'
+       and Employee_Last_Name = 'Sham'
+[2019-04-29 11:47:50] 1 row affected in 14 ms
+
+1	Chuck	Jones	MANAGER	100000
+2	Marty	Krofft	ENGINEER	80000
+3	Peter	Barker	DEVELOPER	50000
+5	Ellen	Musk	DEVELOPER	42000
