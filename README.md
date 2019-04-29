@@ -1,5 +1,8 @@
 # SQL Intro Day 2 Morning Classwork
 
+
+## Copy Responses into the text file ```results.txt``` included in the project
+
 For this exercise you will create a ```Company``` Database that contains a single table called ```Employee```.
 
 ### Exercise 1:
