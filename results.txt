@@ -1,0 +1,30 @@
+Enter the results of each query below the appropriate item.
+
+Insert 4 new Employees using INSERT:
+Chuck, Jones, MANAGER, 100000
+Marty, Krofft, ENGINEER, 80000
+Peter, Barker, DEVELOPER, 50000
+Sam, Sham, DEVELOPER, 35000
+Ellen, Musk, DEVELOPER, 38000
+
+RESULT:
+
+SELECT all Employee records from the database
+
+RESULT:
+
+SELECT only the DEVELOPERS from the table
+
+RESULT:
+
+SELECT only the Employees making more than 50000
+
+RESULT:
+
+UPDATE the salary for Ellen Musk and give a raise to 42000
+
+RESULT:
+
+DELETE Sam Sham
+
+RESULT:
